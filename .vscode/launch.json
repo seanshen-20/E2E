@@ -9,7 +9,7 @@
             "request": "attach",
             "name": "Attach to Cypress",
             "port": 9222,
-            "url": "http://localhost*",
+            "url": "https://localhost*",
             "webRoot": "${workspaceFolder}",
             "sourceMaps": true,
             "skipFiles": [
