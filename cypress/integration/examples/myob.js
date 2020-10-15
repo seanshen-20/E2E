@@ -1,13 +1,11 @@
 /// <reference types="cypress" />
 
-
 describe("tax notice delete and create", function () {
   const clientid = "15bc080d-f890-47ff-ac33-9a0f3d5ed583";
   const practice = "KIWI_AONZDB";
 
-  before(() => {
-    cy.login(practice).log("cypress test start!");
-  })
+  before(() => cy.login(practice).log("cypress test start!"));
+  
   it("Verify real estate login", function () {
     cy.server();
     cy.route(
