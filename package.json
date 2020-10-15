@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
-    "cypress:open": "cypress open",
+    "cy:open": "cypress open",
     "dev": "cross-env BROWSER=none CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open"
   },
-  "author": "",
+  "author": "Sean",
   "license": "ISC",
   "dependencies": {
     "browsermob-proxy": "^1.0.10",
