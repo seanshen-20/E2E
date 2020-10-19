@@ -1,8 +1,9 @@
 #!/bin/bash -eu
 echo "Running Cypress e2e tests headlessly"
+chmod + x $(pwd)/cypress.json
 docker run -it \
     -v $(pwd)/cypress:/e2e/cypress \
-    -v $(pwd)/cypress.json:/e2e/cypress.json:ro \
+    -v $(pwd)/cypress.json:/e2e/cypress.json \
     -v ~/.aws/credentials:/root/.aws/credentials \
     -e CYPRESS_TAX_EMAIL=archietest.user1propel@gmail.com\
     -e CYPRESS_TAX_PASSWORD=Myob1234\
