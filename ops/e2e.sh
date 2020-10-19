@@ -1,6 +1,8 @@
 #!/bin/bash -eu
 echo "Running Cypress e2e tests headlessly"
 echo $PWD 
+cd cypress 
+echo $PWD 
 
 docker run -it \
     -v $PWD:/e2e \
