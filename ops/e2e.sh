@@ -1,6 +1,5 @@
 #!/bin/bash -eu
 echo "Running Cypress e2e tests headlessly"
-chmod + x $(pwd)/cypress.json
 docker run -it \
     -v $(pwd)/cypress:/e2e/cypress \
     -v $(pwd)/cypress.json:/e2e/cypress.json \
