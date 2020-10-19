@@ -5,5 +5,9 @@ steps:
     STEPS_COUNT: 2
 - wait
 
+- label: ":rocket:"
+  command: ./ops/e2e.sh 
+- wait 
+
 - label: ":desktop_computer:"
   command: ./ops/fetch-and-display-number.sh collect

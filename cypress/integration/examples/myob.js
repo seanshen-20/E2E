@@ -14,7 +14,7 @@ describe("tax notice delete and create", function () {
       .visit(link.tax_manage_notice_page(clientid));
 
     // purge
-    cy.wait("@getNotice", { timeout: 15000 }).then((xhr) => purgeTaxNotice(xhr));
+    cy.wait("@getNotice", { timeout: 30000 }).then((xhr) => purgeTaxNotice(xhr));
 
     // verify creation
     cy.reload()
