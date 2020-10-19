@@ -5,7 +5,7 @@ cd cypress
 echo $PWD 
 
 docker run -it \
-    -v $PWD:/e2e \
+    -v $PWD:/e2e/ \
     -v ~/.aws/credentials:/root/.aws/credentials \
     -e CYPRESS_TAX_EMAIL=archietest.user1propel@gmail.com\
     -e CYPRESS_TAX_PASSWORD=Myob1234\
