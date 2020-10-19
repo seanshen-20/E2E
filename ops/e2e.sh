@@ -6,4 +6,4 @@ docker run -it \
     -v ~/.aws/credentials:/root/.aws/credentials \
     -e CYPRESS_TAX_EMAIL=archietest.user1propel@gmail.com\
     -e CYPRESS_TAX_PASSWORD=Myob1234\
-    -w /e2e cypress/included:3.4.0 
+    -w /e2e cypress/included:3.2.0 
