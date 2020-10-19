@@ -1,5 +1,3 @@
 steps:
-- label: ":smile"
-  command: buildkite-agent pipeline upload .buildkite/pipeline.a.yml
 - label: ":rocket:"
   command: ./ops/e2e.sh 
