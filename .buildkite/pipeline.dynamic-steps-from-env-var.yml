@@ -5,4 +5,4 @@ steps:
 - wait
 
 - label: ":desktop_computer:"
-  command: ./src/fetch-and-display-number.sh collect
+  command: ./ops/fetch-and-display-number.sh collect
