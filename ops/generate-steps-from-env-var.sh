@@ -11,6 +11,6 @@ for((i=0;i<STEPS_COUNT;i++));
 do
   cat <<YAML
 - label: "$i"
-  command: ./src/generate-and-store-number.sh $i
+  command: ./ops/generate-and-store-number.sh $i
 YAML
 done
