@@ -1,6 +1,5 @@
 {
   "viewportWidth": 1280,
   "viewportHeight": 800,
-  "video": false,
-  "experimentalSourceRewriting": true
+  "video": false
 }
