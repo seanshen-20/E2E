@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-export function purgeTaxNotice(xhr: Cypress.WaitXHR) {
+export function purgeTaxNotice(xhr) {
     cy.request({
       method: "POST",
       url:
@@ -18,8 +18,8 @@ export function purgeTaxNotice(xhr: Cypress.WaitXHR) {
   }
 
 export const link = {
-    tax_manage_notice_api : (clientid: string) => `https://tax-manager-svc-api.svc.platform.myobdev.com/taxmanager/api/clients-without-tax-notices?clientId=${clientid}`,
-    tax_manage_notice_page : (clientid: string) => `https://shell.rogue.dev.myob.com/client/${clientid}/compliance/tax-notices`
+    tax_manage_notice_api : (clientid) => `https://tax-manager-svc-api.svc.platform.myobdev.com/taxmanager/api/clients-without-tax-notices?clientId=${clientid}`,
+    tax_manage_notice_page : (clientid) => `https://shell.rogue.dev.myob.com/client/${clientid}/compliance/tax-notices`
 } 
 
 export const cssLocator = {
