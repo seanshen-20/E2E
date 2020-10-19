@@ -1,6 +1,6 @@
 steps:
 - label: ":pipeline:"
-  command: ./src/generate-steps-from-env-var.sh | buildkite-agent pipeline upload
+  command: ./ops/generate-steps-from-env-var.sh | buildkite-agent pipeline upload
 
 - wait
 
