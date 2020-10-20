@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 echo "Running Cypress e2e tests headlessly"
 echo $(ls) 
+# buildkite-agent pipeline upload .buildkite/pipeline.a.yml
 
 docker run -it \
     -v $PWD/cypress:/e2e/cypress \
