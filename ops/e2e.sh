@@ -14,3 +14,5 @@ export CYPRESS_TAX_EMAIL=archietest.user1propel@gmail.com
 export CYPRESS_TAX_PASSWORD=Myob1234  
 npm install cypress@5.4.0
 npm run cy:run
+
+
