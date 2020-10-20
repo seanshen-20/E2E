@@ -2,7 +2,10 @@ env:
   TERM: "xterm"
 
 steps:
-  - label: ":Init:init "
+  - label: ":cypress: Cypress"
+    env: 
+        CYPRESS_TAX_EMAIL: archietest.user1propel@gmail.com
+        CYPRESS_TAX_PASSWORD: Myob1234  
     command: |
       echo "--- Node version"
       node --version
@@ -19,9 +22,4 @@ steps:
       echo "--- Cypress version"
       "$(npm bin)/cypress" version
       echo "+++ Run Cypress tests"
-  - label: ":cypress: Cypress"
-    env: 
-        CYPRESS_TAX_EMAIL: archietest.user1propel@gmail.com
-        CYPRESS_TAX_PASSWORD: Myob1234  
-    command:
-        npm run cy:run
+      npm run cy:run
