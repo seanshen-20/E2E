@@ -3,12 +3,4 @@ env:
 
 steps:
   - label: ":cypress: Cypress"
-    env: 
-        CYPRESS_TAX_EMAIL: archietest.user1propel@gmail.com
-        CYPRESS_TAX_PASSWORD: Myob1234  
-    command: |
-      echo "--- Install NPM dependencies"
-      # echo "--- Install custom Cypress version"
-      npm install cypress@5.4.0
-      echo "+++ Run Cypress tests"
-      npm run cy:run
+    command: ./ops/e2e.sh
