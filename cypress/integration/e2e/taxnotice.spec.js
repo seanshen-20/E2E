@@ -9,9 +9,9 @@ describe("tax notice test", function () {
 
   it("tax notice delete and create", function () {
     cy.server()
-      .route(link.tax_manage_notice_api(clientid))
+      .route(link.tax_manager_notice_api(clientid))
       .as("getNotice")
-      .visit(link.tax_manage_notice_page(clientid));
+      .visit(link.tax_manager_notice_page(clientid));
 
     // purge
     cy.wait("@getNotice", { timeout: 30000 }).then((xhr) => purgeTaxNotice(xhr));
@@ -24,4 +24,4 @@ describe("tax notice test", function () {
   });
 });
 
-// do not want to override standard timeout
+

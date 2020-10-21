@@ -1,5 +1,7 @@
 {
   "viewportWidth": 1280,
   "viewportHeight": 800,
-  "video": false
+  "video": false,
+  "defaultCommandTimeout": 20000,
+  "requestTimeout": 20000
 }
