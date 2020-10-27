@@ -4,3 +4,7 @@ env:
 steps:
   - label: ":cypress: Cypress"
     command: ./ops/e2e.sh
+  - block: "Lauch Prod"
+    branches: "master"
+  - label: ":rocket: Deploy to Cloudfront"
+    command: ./ops/e2e.sh 
