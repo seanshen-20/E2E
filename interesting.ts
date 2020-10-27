@@ -11,7 +11,6 @@ const headers: Array<Object> = Object.keys(Activity).map(key => {
     return { text: key, value: key }
 });
 enum e {A = 'A', B ='B'}
-type aa = Required<>
 function extract<T>(properties: Record<keyof T, true>){
     return function<TActual extends T>(value: TActual){
         let result = {} as T;
@@ -47,4 +46,4 @@ function call<Arg extends any[]>(fncall: (...args: Arg) => any, ...args: Arg) {
     type a = FunctionReturnType<c>;
     return fncall(...args)
 }
-call(RanInteger, '10');
+call(RanInteger, 10);
