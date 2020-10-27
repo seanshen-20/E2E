@@ -2,9 +2,12 @@ env:
   TERM: "xterm"
 
 steps:
-  - label: ":cypress: Cypress"
+  - name: ":cypress: Cypress"
     command: ./ops/e2e.sh
+
   - block: "Lauch Prod"
     branches: "master"
-  - label: ":rocket: Deploy to Cloudfront"
+
+  - name: ":rocket: Deploy to Cloudfront"
     command: ./ops/e2e.sh 
+    branches: "master" 
