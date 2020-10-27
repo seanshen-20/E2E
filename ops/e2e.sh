@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 echo "Running Cypress e2e tests headlessly"
 echo "from ...."
+echo "add another line of code"
 # docker run -it \
 #     -v $PWD/cypress:/e2e/cypress \
 #     -v $PWD/cypress.json:/e2e/cypress.json \
