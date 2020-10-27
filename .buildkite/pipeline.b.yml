@@ -6,6 +6,7 @@ steps:
     command: ./ops/e2e.sh
 
   - block: "Lauch Prod"
+    branches: "master"
 
   - label: ":rocket: Deploy to Cloudfront"
     command: ./ops/e2e.sh 
