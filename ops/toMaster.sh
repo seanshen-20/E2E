@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # merge sha 
 # how to submit pr?
 git checkout master 
