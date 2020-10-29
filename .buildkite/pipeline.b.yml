@@ -9,5 +9,5 @@ steps:
     branches: "master"
 
   - label: ":rocket: Deploy to Cloudfront"
-    command: ./ops/e2e.sh 
+    command: ./ops/show_environment.sh 
     branches: "master" 
