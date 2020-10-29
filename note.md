@@ -2,6 +2,6 @@
 #### HOW TO START 
 - feature 3 
 - feature 3
-you should 
+you 
 
 
