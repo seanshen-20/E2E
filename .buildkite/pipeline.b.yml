@@ -4,6 +4,7 @@ env:
 steps:
   - label: ":cypress: Cypress"
     command: ./ops/e2e.sh
+    if: build.branch != 'master'
 
   - block: "Lauch Prod"
     branches: "master"
