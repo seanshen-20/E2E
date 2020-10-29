@@ -1,5 +1,6 @@
 #!/bin/bash
 
-git checkout master 
-git merge "origin/${1:-development}"; 
-gh pr create -f -B master 
+git checkout development
+git pull
+git merge "${1:-development}"; 
+gh pr create -f -B master
