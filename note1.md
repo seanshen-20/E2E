@@ -1,2 +1,3 @@
 ### Dummy note 1
-#### Add something 
+#### Add something
+- feature 2 
