@@ -1,3 +1,3 @@
 ### CYPRESS TEST 
 #### HOW TO START 
-- conflict 
+- feature 1  
