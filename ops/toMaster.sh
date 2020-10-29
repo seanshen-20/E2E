@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git checkout development
-git pull
+git checkout master 
 git merge "${1:-development}"; 
-gh pr create -f -B master
+git push 
+gh pr create -f 
