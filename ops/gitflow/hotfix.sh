@@ -1,3 +1,4 @@
+#!/bin/bash
 git -version &> /dev/null && echo "ok" || (echo "please go to git UI and submit pr! "; $SHELL)
 
 echo "h"
