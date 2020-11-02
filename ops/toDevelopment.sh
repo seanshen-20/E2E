@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git checkout "feature-${1:-1}" 
+# $1 is commit message 
 git add .
-git commit -m "${2:-feature-${1:-1}-$(uuidgen)}"
+git commit -m "${1:-feature-$(uuidgen)}"
 git push 
 gh pr create -f -B development 
