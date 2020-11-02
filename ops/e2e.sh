@@ -17,4 +17,5 @@ export CYPRESS_TAX_PASSWORD=Myob1234
 npm install cypress@5.4.0
 npm run cy:run
 
-
+echo "$(git config user.email)"
+echo "$(git --version)"
